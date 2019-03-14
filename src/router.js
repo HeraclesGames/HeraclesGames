@@ -15,22 +15,19 @@ export default new Router({
       path: "/games",
       name: "games",
 
-      component: () =>
-        import("./views/Games.vue")
+      component: () => import("./views/Games.vue")
     },
     {
       path: "/info",
       name: "info",
-      
-      component: () =>
-        import("./views/Info.vue")
+
+      component: () => import("./views/Info.vue")
     },
     {
       path: "/contact",
       name: "contact",
-      
-      component: () =>
-        import("./views/Contact.vue")
+
+      component: () => import("./views/Contact.vue")
     }
   ]
 });

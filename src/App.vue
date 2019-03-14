@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/"><img src="C:/Users/orthoex/Desktop/Development/Web Development/HeraclesGames/HGWeb/src/assets/logo.PNG" alt="logo"> </router-link> 
+      <router-link to="/"><img class="logo" src="https://github.com/HeraclesGames/HeraclesGames/raw/master/src/assets/logo.png" alt="logo"> </router-link> 
       <router-link to="/"> Home </router-link> 
       <router-link to="/games">Games </router-link> 
       <router-link to="/info">Info </router-link> 
@@ -13,17 +13,25 @@
 
 			<div class="footer-left">
 
-				<h3><img src="C:/Users/orthoex/Desktop/Development/Web Development/HeraclesGames/HGWeb/src/assets/logo.PNG"></h3>
-
-				<p class="footer-links">
-					<a href="#">Home</a>
-					·
-					<a href="#">Games</a>
-					·
-					<a href="#">Info</a>
-					·
-					<a href="#">Contact</a>
-				</p>
+				<h3><img class="logo-footer" src="https://github.com/HeraclesGames/HeraclesGames/raw/master/src/assets/logo.png"></h3>
+			
+				<div class="footer-link-container">
+					<p class="footer-links">
+						<span style="font-size: 24px; color: #c4c4c4;">Navigation</span>
+						<a href="#">Home</a>
+						<a href="#">Games</a>
+						<a href="#">Info</a>
+						<a href="#">Contact</a>
+					</p>
+				
+					<p class="footer-links-support">
+						<span style="font-size: 24px; color: #c4c4c4;">Support</span>
+						<a href="#">Home</a>
+						<a href="#">Games</a>
+						<a href="#">Info</a>
+						<a href="#">Contact</a>
+					</p>
+				</div>
 
 				<p class="footer-company-name">Heracles Games &copy; 2019</p>
 			</div>
@@ -85,6 +93,21 @@
     text-decoration: none;
     list-style: none;
     color: #fff;
+	padding: 5px;
+  }
+
+  a:hover {
+	color: #c1c1c1;
+  }
+
+  .logo {
+	  width: 20px;
+	  height: 20px;
+  }
+
+  .logo-footer {
+	width: 50px;
+	height: 50px;
   }
 
   .footer-distributed{
@@ -121,14 +144,34 @@
 .footer-distributed h3 span{
 	color:  #5383d3;
 }
+
+.footer-link-container .footer-links, .footer-links-support {
+	display: inline-block;
+}
+
 .footer-distributed .footer-links{
 	color:  #ffffff;
 	margin: 20px 0 12px;
-	padding: 0;
+	padding-left: 0px;
+	padding-right: 15px;
+}
+
+.footer-distributed .footer-links-support{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .footer-distributed .footer-links a{
-	display:inline-block;
+	display: block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-links-support a{
+	display: block;
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
