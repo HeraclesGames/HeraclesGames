@@ -28,6 +28,30 @@ export default new Router({
       name: "contact",
 
       component: () => import("./views/Contact.vue")
+    },
+    {
+      path: "/faq",
+      name: "faq",
+
+      component: () => import("./views/FAQ.vue")
+    },
+    {
+      path: "/help",
+      name: "help",
+
+      component: () => import("./views/GetHelp.vue")
+    },
+    {
+      path: "/suggestions",
+      name: "suggestions",
+
+      component: () => import("./views/Suggestions.vue")
+    },
+    {
+      path: "/bugs",
+      name: "bugs",
+
+      component: () => import("./views/BugReport.vue")
     }
   ]
 });

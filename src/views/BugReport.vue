@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <div class="header">
-      
-    </div>
+    <h1>This is a bug report page</h1>
   </div>
 </template>
 
@@ -12,11 +10,3 @@ export default {
   name: "home"
 };
 </script>
-
-<style lang="scss">
-  .header {
-    margin: 0;
-
-  }
-</style>
-

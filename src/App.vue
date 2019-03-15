@@ -1,35 +1,37 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/"><img class="logo" src="https://github.com/HeraclesGames/HeraclesGames/raw/master/src/assets/logo.png" alt="logo"> </router-link> 
+      <router-link to="/"><img class="logo" src="https://github.com/HeraclesGames/HeraclesGames/raw/master/src/assets/logo-notextwhite.png" alt="logo"> </router-link> 
       <router-link to="/"> Home </router-link> 
       <router-link to="/games">Games </router-link> 
-      <router-link to="/info">Info </router-link> 
+      <router-link to="/info">Info </router-link>
       <router-link to="/contact">Contact</router-link>
     </div>
+
+		<img src="" alt="">
     <router-view />
     
 		<footer class="footer-distributed">
 
 			<div class="footer-left">
 
-				<h3><img class="logo-footer" src="https://github.com/HeraclesGames/HeraclesGames/raw/master/src/assets/logo.png"></h3>
+				<h3><img class="logo-footer" src="https://github.com/HeraclesGames/HeraclesGames/raw/master/src/assets/logo-sidewhite.png"></h3>
 			
 				<div class="footer-link-container">
 					<p class="footer-links">
 						<span style="font-size: 24px; color: #c4c4c4;">Navigation</span>
-						<a href="#">Home</a>
-						<a href="#">Games</a>
-						<a href="#">Info</a>
-						<a href="#">Contact</a>
+            <router-link to="/"> Home </router-link> 
+            <router-link to="/games">Games </router-link> 
+            <router-link to="/info">Info </router-link> 
+            <router-link to="/contact">Contact</router-link>
 					</p>
 				
 					<p class="footer-links-support">
 						<span style="font-size: 24px; color: #c4c4c4;">Support</span>
-						<a href="#">Home</a>
-						<a href="#">Games</a>
-						<a href="#">Info</a>
-						<a href="#">Contact</a>
+            <router-link to="/faq">FAQ</router-link> 
+            <router-link to="/help">Get Help</router-link> 
+            <router-link to="/suggestions">Suggestions</router-link> 
+            <router-link to="/bugs">Report A Bug</router-link>
 					</p>
 				</div>
 
@@ -80,20 +82,26 @@
     margin: 0;
     padding: 0;
     background-color: #fff;
+		
+    overflow-y : auto;
   }
 
   #nav {
-    padding: 10px;
+    padding: 15px;
     padding-left: 10px;
     font: bold 24px sans-serif;
     background-color: #292c2f;
+  }
+
+  #nav .logo {
+    float: left;
   }
 
   a {
     text-decoration: none;
     list-style: none;
     color: #fff;
-	padding: 5px;
+	  padding: 5px;
   }
 
   a:hover {
@@ -101,27 +109,32 @@
   }
 
   .logo {
-	  width: 20px;
-	  height: 20px;
+	  width: auto;
+	  height: 30px;
+		padding: 0;
+		margin: 0;
   }
 
   .logo-footer {
-	width: 50px;
-	height: 50px;
+    width: auto;
+    height: 70px;
+    padding: 0;
+    margin: 0;
   }
 
   .footer-distributed{
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-  font: bold 16px sans-serif;
-  position: fixed;
-  bottom: 0;
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    position: fixed;
+    bottom: 0;
 
-	padding: 55px 50px;
-	margin-top: 80px;
+    padding: 55px 50px;
+    padding-top: 35px;
+    margin-top: 80px;
 }
 
 .footer-distributed .footer-left,
@@ -136,16 +149,13 @@
 }
 
 .footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+  padding: 0;
 	margin: 0;
 }
 
-.footer-distributed h3 span{
-	color:  #5383d3;
-}
 
-.footer-link-container .footer-links, .footer-links-support {
+.footer-link-container .footer-links,
+.footer-link-container .footer-links-support {
 	display: inline-block;
 }
 
